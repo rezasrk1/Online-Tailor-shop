@@ -59,6 +59,9 @@ Route::group(['middleware'=>['guest']],function (){
 Route::group(['middleware'=>['auth']],function (){
     Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
     Route::get('logout',[LogoutController::class,'index'])->name('logout');
+    Route::get('orders',[OrdersController::class,'index'])->name('orders');
+    Route::post('orders',[OrdersController::class,'store']);
+    Route::delete('orders',[OrdersController::class,'destroy'])->name('order.destroy');
 
     Route::get('cloth-types',[ClothTypeController::class,'index'])->name('cloth-types');
     Route::post('cloth-types',[ClothTypeController::class,'store']);
