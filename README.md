@@ -1,6 +1,6 @@
 
 
-````markdown
+
 # Online Tailor Shop Management System
 
 A Laravel-based web application for managing tailor shop operations such as customer orders, measurements, stitching progress, and delivery.
@@ -10,7 +10,6 @@ A Laravel-based web application for managing tailor shop operations such as cust
 1. **Clone the repository**
    ```bash
    git clone https://github.com/rezasrk1/Online-Tailor-shop.git
-````
 
 2. **Navigate into the project folder**
 
