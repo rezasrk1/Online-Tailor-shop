@@ -82,8 +82,8 @@ Password: admin
 
 ## 📸 Screenshots
 
-![Login Page](/screenshots/login.png?raw=true "Login page")
-![Dashboard](/screenshots/dashboard.png?raw=true "Dashboard page")
+
+
 ![Screenshot (775)](https://github.com/user-attachments/assets/72274438-2594-4812-ae8c-4e1fceb57588)
 
 ![Screenshot (794)](https://github.com/user-attachments/assets/819830e3-e6f7-46fd-b760-3928a6b1cdd2)
