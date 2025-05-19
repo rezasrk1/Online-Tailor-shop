@@ -2,10 +2,13 @@
 <html lang="en" style="
     background-color: #d67f2e;
 ">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -16,6 +19,9 @@
     <a href="/" type="button" class="btn btn-primary" style="
     margin: 15px 21px;
 ">Home</a>
+<a href="http://127.0.0.1:8000/customer/login" type="button" class="btn btn-primary" style="
+    margin: 15px 21px;
+">Customer login</a>
 
         <div class="container" style="
     margin: 152px auto;
@@ -25,7 +31,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1>
-                        Registration form 
+                        Registration
                     </h1>
 
                     <!-- @if(session('error-msg'))
@@ -33,12 +39,12 @@
                             {{ session('error-msg') }}
                         </div>
                     @endif -->
-
+                
                 <form method="POST" action="{{ route('buyerregister_submit') }}">
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" required>
                     </div>
 
                     <div class="form-group">
@@ -56,10 +62,14 @@
                         <input id="password_confirmation" type="password" name="password_confirmation"  class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                     </div>
                     
-                   
-                    <div>
+                    <div class="mb-0">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Register') }}
+                            </button>
+                        </div>
+                    <!-- <div>
                     <button type="submit" class="btn btn-primary">register</button>
-                    </div>
+                    </div> -->
                 </form>
 
                 </div>

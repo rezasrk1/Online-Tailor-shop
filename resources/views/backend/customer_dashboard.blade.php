@@ -4,8 +4,9 @@
 <link rel="shortcut icon" href="@if(!empty(AppSettings::get('favicon'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/ico/jami.jpg')}} @endif" type="image/x-icon">
 <div class="row">
                 <div class="col-12">
+                    
                     <h1>
-                        customer Dashboard 
+                        Customer Dashboard 
                     </h1>
                     <form action="{{ route('buyer.logout') }}" method="POST">
                         @csrf
@@ -65,7 +66,14 @@ p {
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Blause</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$17</p>
                             
-                          
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>1]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p2.1.jpg')}} @endif">
@@ -73,11 +81,27 @@ p {
                         
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$29.99</p>
                         </div>
+
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>2]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p6.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Kamij</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$30</p>
-                        
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>3]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                            
                            
                         </div>
@@ -85,57 +109,134 @@ p {
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p7.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">shelower kamij</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$42</p>    
-                         
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>4]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p8.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">kurti</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$22</p>    
-                            
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>5]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p9.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Kurti</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$22</p>   
                         </div>
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>6]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p5.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Baby kamij</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$18</p>  
                         </div>
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>7]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p10.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Baby frok</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$26</p>  
                         </div>
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>8]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p11.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Baby frok</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$26</p>    
                             
                         </div>
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>9]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p13.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">panjabi</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$30</p>  
                         </div>
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>10]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
 
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p14.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">shirt</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$22.50</p>
                         </div>
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>11]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p21.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">coat</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$40</p>  
                         </div>
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>12]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p22.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">safari suite</p>
                         <p class="price" style="font-weight:bold; font-size: 18px;">price:$60</p>   
                         </div>
-                        
+                        <a type='button' href="{{ url('/dashboad/add_cat',['id'=>13]) }}" style="
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 25px;
+    border: 5px #070707;
+    background-color: white;
+    margin: 20px;
+    border-radius: 24px;">buy now</a>
                         
 
                     </div>

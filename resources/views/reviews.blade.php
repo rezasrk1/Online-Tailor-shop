@@ -1,6 +1,7 @@
 html
 <!DOCTYPE html>
 <html lang="en">
+<a href="/">Home</a>
 <head>
     <title>Reviews</title>
     <style>

@@ -441,7 +441,7 @@ footer {
         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/logo/jamis1.jpg')}} @endif">
         </div>
         <ul class="nav-links">
-            <li><a href="/customer-login">Home</a></li>
+            <li><a href="http://127.0.0.1:8000/customer/login">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -624,7 +624,7 @@ footer {
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p6.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Kamij</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$30</p>
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$30</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>
                         
                            
                            
@@ -632,56 +632,56 @@ footer {
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p7.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">shelower kamij</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$42</p>    
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$42</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>    
                          
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p8.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">kurti</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$22</p>    
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$22</p> <button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>   
                             
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p9.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Kurti</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$22</p>   
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$22</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>   
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p5.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Baby kamij</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$18</p>  
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$18</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>  
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p10.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Baby frok</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$26</p>  
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$26</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>  
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p11.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">Baby frok</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$26</p>    
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$26</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>    
                             
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p13.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">panjabi</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$30</p>  
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$30</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>  
                         </div>
 
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p14.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">shirt</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$22.50</p>
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$22.50</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p21.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">coat</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$40</p>  
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$40</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>  
                         </div>
                         <div class="product">
                         <img class="brand-logo" alt="logo" src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('app-assets/images/resize photo/p22.jpg')}} @endif">
                         <p class="product-name" style="font-weight:bold; font-size: 24px; font-style: italic;">safari suite</p>
-                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$60</p>   
+                        <p class="price" style="font-weight:bold; font-size: 18px;">price:$60</p><button class="add-to-cart-btn btn btn-primary" style="display: inline-block; margin-left: 10px;">Add to Cart</button>   
                         </div>
 
                         <script>

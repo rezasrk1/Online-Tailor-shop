@@ -67,7 +67,7 @@
 </head>
 <body>
     <div class="container">
-    <a href="/home">Home</a>
+    <a href="/">Home</a>
         <h1>Customer Reviews</h1>
         @if(session('success'))
             <p style="color: #4CAF50;">{{ session('success') }}</p>

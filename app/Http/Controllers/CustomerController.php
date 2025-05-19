@@ -15,7 +15,7 @@ class CustomerController extends Controller
     public function index()
     {
         $title ="Customers";
-        $customers =Buyer::get();
+        $customers =Buyer::all();
         return view('customers',compact('title','customers'));
     }
 
@@ -83,7 +83,7 @@ class CustomerController extends Controller
      */
     public function destroy(Request $request)
     {
-        $customer = Customer::find($request->id);
+        $customer = Buyer::find($request->id);
         $customer->delete();
         $notification = array(
             'message'=>"Customer deleted successfully!!!",

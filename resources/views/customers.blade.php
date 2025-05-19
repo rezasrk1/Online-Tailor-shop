@@ -49,11 +49,9 @@
                 <table class="table table-striped table-bordered dataex-html5-export">
                   <thead>
                     <tr>
-                        <th>#</th>
+                        <th>ID</th>
                         <th>name</th>
-                        <th>Address</th>
-                        <th>Phone Number</th>
-                        <th>Gender</th>
+                        <th>Email</th>
                         <th>Action</th>
                     </tr>
                   </thead>
@@ -62,10 +60,8 @@
                         @foreach ($customers as $customer)
                           <tr>
                             <td>{{$customer->id}}</td>
-                            <td>{{$customer->fullname}}</td>
-                            <td>{{$customer->address}}</td>
-                            <td>{{$customer->phone}}</td>
-                            <td>{{$customer->gender}}</td>
+                            <td>{{$customer->name}}</td>
+                            <td>{{$customer->email}}</td>
                             <td>
                               <a href="#" class="float-md-right" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
                               <div class="dropdown-menu">
@@ -104,56 +100,30 @@
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form method="post" action="{{route('customers')}}">
+        <form method="post" action="{{route('buyerregister_submit')}}">
           @csrf
             <div class="modal-body">
-                <label>Full Name: </label>
-                <div class="form-group">
-                    <input type="text" placeholder="Enter customer fullname" name="fullname" class="form-control">
-                </div>
+            <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    </div>
 
-                <label>Address: </label>
-                <div class="form-group">
-                    <input type="text" placeholder="Enter customer address" name="address" class="form-control">
-                </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    </div>
 
-                <label>Telephone: </label>
-                <div class="form-group">
-                    <input type="text" placeholder="Enter customer phone number" name="phone" class="form-control">
-                </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
 
-                <label>City: </label>
-                <div class="form-group">
-                    <input type="text" placeholder="Enter customer city" name="city" class="form-control">
-                </div>
+                    <div class="form-group">
+                        <label for="password_confirmation">Confirm Password</label>
+                        <input id="password_confirmation" type="password" name="password_confirmation"  class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+                    
 
-                <label>Email: </label>
-                <div class="form-group">
-                    <input type="text" placeholder="Enter customer email" name="email" class="form-control">
-                </div>
-
-                <label>Password:</label>
-                <input type="password" name="password" class="form-control" required>
-
-                <label>Confirm Password:</label>
-                <input type="password" name="password_confirmation" class="form-control" required>
-
-
-                <label>Commment: </label>
-                <div class="form-group">
-                    <textarea name="comment" placeholder="enter comment about customer" class="form-control"></textarea>
-                </div>
-
-                <label>Sex: </label>
-                <div class="form-group">
-                    <select name="gender" title="Select Gender" class="select2 form-control">
-                        <optgroup>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </optgroup>
-                    </select>
-                </div>
-            </div>
             <div class="modal-footer">
                 <input type="reset" class="btn btn-outline-secondary btn-lg" data-dismiss="modal" value="close">
                 <input type="submit" class="btn btn-outline-primary btn-lg" value="Submit" name="add_customer">

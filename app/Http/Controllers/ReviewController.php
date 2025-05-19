@@ -34,7 +34,7 @@ class ReviewController extends Controller
             'product_picture' => isset($path) ? $path : null, // Save the file path if it exists, or null if not uploaded
         ]);
 
-        return redirect('/home')->with('success', 'Thank you for your review!');
+        return redirect('/')->with('success', 'Thank you for your review!');
     }
 }
 

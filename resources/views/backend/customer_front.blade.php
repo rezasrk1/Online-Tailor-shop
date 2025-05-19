@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1>
-                        Login form 
+                        Login form
                     </h1>
 
                     @if(session('error-msg'))
@@ -29,7 +29,10 @@
                             {{ session('error-msg') }}
                         </div>
                     @endif
-                    <a href="/">welcome page</a>>
+                    <a href="/" type="button" class="btn btn-primary" style="
+    margin: 15px 21px;
+">welcome page</a>
+                    
 
                     <form action="{{ url('/login/customer') }}" method="post">
                         @csrf 

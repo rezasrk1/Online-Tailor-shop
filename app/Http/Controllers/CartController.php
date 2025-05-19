@@ -27,4 +27,17 @@ class CartController extends Controller
 
         return redirect()->back()->with('success', 'Product added to cart successfully.');
     }
+
+    public function cartinsert(Request $request){
+        Cart::create([
+            'user_id' => $request->user_id,
+            'product_id' => $request->product_id,
+            
+        ]);
+    
+        return back()->with('successfull', 'ok !');
+    }
+    
+    
+        
 }
